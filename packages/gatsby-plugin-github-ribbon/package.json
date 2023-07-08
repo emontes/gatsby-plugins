@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/gatsby-uc/plugins/blob/main/packages/gatsby-plugin-github-ribbon/README.md",
   "scripts": {
-    "build": "babel src --out-dir ./dist --ignore \"**/__tests__\"",
+    "build": "node init && babel src --out-dir ./dist --ignore \"**/__tests__\"",
     "test": "jest",
     "watch": "yarn build --watch"
   },

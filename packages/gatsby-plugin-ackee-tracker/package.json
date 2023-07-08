@@ -27,7 +27,7 @@
     "Alex Moon <alex.jared.moon@gmail.com>"
   ],
   "scripts": {
-    "build": "babel src --out-dir ./dist --ignore \"**/__tests__\"",
+    "build": "node init && babel src --out-dir ./dist --ignore \"**/__tests__\"",
     "watch": "yarn build --watch"
   },
   "dependencies": {

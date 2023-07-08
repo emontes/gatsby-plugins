@@ -4,7 +4,7 @@
   "description": "A simple starter to get started with gatsby-source-s3",
   "version": "1.0.14",
   "license": "MIT",
-  "author": "Robin Métral <robin@metral.ch>",
+  "author": "Robin M\u00e9tral <robin@metral.ch>",
   "dependencies": {
     "gatsby": "^5.10.0",
     "gatsby-plugin-image": "^3.10.0",
@@ -16,7 +16,7 @@
   },
   "scripts": {
     "develop": "gatsby develop",
-    "build": "gatsby build --verbose",
+    "build": "node init && gatsby build --verbose",
     "serve": "gatsby serve"
   }
 }

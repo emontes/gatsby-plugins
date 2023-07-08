@@ -3,7 +3,7 @@
   "description": "A Gatsby plugin to source objects and images from AWS S3",
   "version": "4.1.0",
   "contributors": [
-    "Robin Métral <robin@metral.ch>",
+    "Robin M\u00e9tral <robin@metral.ch>",
     "Alex Moon <alex.jared.moon@gmail.com>",
     "h93xV2"
   ],
@@ -29,8 +29,8 @@
     "start-server-and-test": "^2.0.0"
   },
   "scripts": {
-    "build": "babel src --out-dir ./dist --ignore \"**/__tests__,**/*.d.ts\" --extensions \".ts,.js\"",
-    "start": "(cd ../../integration-tests/source-s3 && yarn build && yarn serve)",
+    "build": "node init && babel src --out-dir ./dist --ignore \"**/__tests__,**/*.d.ts\" --extensions \".ts,.js\"",
+    "start": "node init && (cd ../../integration-tests/source-s3 && yarn build && yarn serve)",
     "test:e2e": "cypress run",
     "test": "start-server-and-test 'yarn start' http://localhost:9000 'yarn test:e2e'"
   },

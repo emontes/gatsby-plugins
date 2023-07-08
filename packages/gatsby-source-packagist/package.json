@@ -25,7 +25,7 @@
     "packagist-api-client": "^2.0.0"
   },
   "scripts": {
-    "build": "babel src --out-dir ./dist --ignore \"**/__tests__\"",
+    "build": "node init && babel src --out-dir ./dist --ignore \"**/__tests__\"",
     "format": "yarn run -T format",
     "watch": "yarn build --watch"
   },

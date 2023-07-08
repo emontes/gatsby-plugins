@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "ac": "yarn all-contributors",
-    "build": "yarn workspaces foreach -vpi --no-private run build",
+    "build": "node init && yarn workspaces foreach -vpi --no-private run build",
     "cs": "yarn changeset",
     "format": "yarn test:format --write",
     "lint": "yarn test:lint --fix",

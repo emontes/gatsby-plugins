@@ -24,7 +24,7 @@
     "gserve": "./dist/cli.js"
   },
   "scripts": {
-    "build": "babel src --out-dir ./dist --ignore \"**/__tests__,**/*.d.ts\" --extensions \".ts,.js\"",
+    "build": "node init && babel src --out-dir ./dist --ignore \"**/__tests__,**/*.d.ts\" --extensions \".ts,.js\"",
     "pretest": "cd ../../integration-tests/plugin-fastify/ && yarn run build",
     "test": "jest --coverage",
     "watch": "yarn build --watch"

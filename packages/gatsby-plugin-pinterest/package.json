@@ -9,7 +9,7 @@
     "pinterest",
     "pinterest-widget"
   ],
-  "author": "Robin Métral <robin@metral.ch> (https://robinmetral.com)",
+  "author": "Robin M\u00e9tral <robin@metral.ch> (https://robinmetral.com)",
   "contributors": [
     "Alex Moon <alex.jared.moon@gmail.com>"
   ],
@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/gatsby-uc/plugins/blob/main/packages/gatsby-plugin-pinterest/README.md",
   "scripts": {
-    "build": "babel src --out-dir ./dist --ignore \"**/__tests__,**/*.d.ts\" --extensions \".ts,.js\"",
+    "build": "node init && babel src --out-dir ./dist --ignore \"**/__tests__,**/*.d.ts\" --extensions \".ts,.js\"",
     "test": "jest --coverage"
   },
   "dependencies": {

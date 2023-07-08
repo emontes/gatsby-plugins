@@ -10,11 +10,11 @@
   "scripts": {
     "benchmark": "node benchmark.js",
     "develop": "gatsby develop",
-    "start": "gserve",
-    "build": "gatsby build",
+    "start": "node init && gserve",
+    "build": "node init && gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "build:deps": "cd ../../packages/gatsby-plugin-fastify && yarn build",
+    "build:deps": "node init && cd ../../packages/gatsby-plugin-fastify && yarn build",
     "postinstall": "[[ x\"${GATSBY_CLOUD}\" == \"x\" ]] || yarn build:deps"
   },
   "dependencies": {
